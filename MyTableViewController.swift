@@ -62,16 +62,9 @@ class MyTableViewController: UITableViewController, NSFetchedResultsControllerDe
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
     {
-        let thisProgram = fetchedResultsController.objectAtIndexPath(indexPath) as Program
-        
-        let entityDescription = NSEntityDescription.entityForName("Program", inManagedObjectContext: managedObjectContext)
-        entityDescription
-        
         let managedObject: NSManagedObject = fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
         managedObjectContext.deleteObject(managedObject)
         managedObjectContext.save(nil)
-        
-        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
     }
 
     
