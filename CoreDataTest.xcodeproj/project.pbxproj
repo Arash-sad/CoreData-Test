@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		5BB5F78D19E1FF8900AEA696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F78C19E1FF8900AEA696 /* AppDelegate.swift */; };
 		5BB5F79019E1FF8900AEA696 /* CoreDataTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F78E19E1FF8900AEA696 /* CoreDataTest.xcdatamodeld */; };
-		5BB5F79219E1FF8900AEA696 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F79119E1FF8900AEA696 /* ViewController.swift */; };
 		5BB5F79519E1FF8900AEA696 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5F79319E1FF8900AEA696 /* Main.storyboard */; };
 		5BB5F79719E1FF8900AEA696 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5F79619E1FF8900AEA696 /* Images.xcassets */; };
 		5BB5F79A19E1FF8900AEA696 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BB5F79819E1FF8900AEA696 /* LaunchScreen.xib */; };
 		5BB5F7A619E1FF8900AEA696 /* CoreDataTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F7A519E1FF8900AEA696 /* CoreDataTestTests.swift */; };
+		5BB5F7B019E2002800AEA696 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F7AF19E2002800AEA696 /* MyTableViewController.swift */; };
+		5BB5F7B219E242DB00AEA696 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F7B119E242DB00AEA696 /* Program.swift */; };
+		5BB5F7B419E249C200AEA696 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5F7B319E249C200AEA696 /* AddExerciseViewController.swift */; };
+		5BBFD04919E3669800FF32F9 /* ProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBFD04819E3669800FF32F9 /* ProgramCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +34,16 @@
 		5BB5F78B19E1FF8900AEA696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB5F78C19E1FF8900AEA696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB5F78F19E1FF8900AEA696 /* CoreDataTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest.xcdatamodel; sourceTree = "<group>"; };
-		5BB5F79119E1FF8900AEA696 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BB5F79419E1FF8900AEA696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB5F79619E1FF8900AEA696 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5BB5F79919E1FF8900AEA696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5BB5F79F19E1FF8900AEA696 /* CoreDataTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB5F7A419E1FF8900AEA696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BB5F7A519E1FF8900AEA696 /* CoreDataTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestTests.swift; sourceTree = "<group>"; };
+		5BB5F7AF19E2002800AEA696 /* MyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyTableViewController.swift; path = ../MyTableViewController.swift; sourceTree = "<group>"; };
+		5BB5F7B119E242DB00AEA696 /* Program.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		5BB5F7B319E249C200AEA696 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		5BBFD04819E3669800FF32F9 /* ProgramCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgramCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +86,14 @@
 			isa = PBXGroup;
 			children = (
 				5BB5F78C19E1FF8900AEA696 /* AppDelegate.swift */,
-				5BB5F79119E1FF8900AEA696 /* ViewController.swift */,
+				5BB5F7AF19E2002800AEA696 /* MyTableViewController.swift */,
+				5BB5F7B319E249C200AEA696 /* AddExerciseViewController.swift */,
+				5BBFD04819E3669800FF32F9 /* ProgramCell.swift */,
 				5BB5F79319E1FF8900AEA696 /* Main.storyboard */,
 				5BB5F79619E1FF8900AEA696 /* Images.xcassets */,
 				5BB5F79819E1FF8900AEA696 /* LaunchScreen.xib */,
 				5BB5F78E19E1FF8900AEA696 /* CoreDataTest.xcdatamodeld */,
+				5BB5F7B119E242DB00AEA696 /* Program.swift */,
 				5BB5F78A19E1FF8900AEA696 /* Supporting Files */,
 			);
 			path = CoreDataTest;
@@ -215,8 +224,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BB5F79219E1FF8900AEA696 /* ViewController.swift in Sources */,
+				5BB5F7B219E242DB00AEA696 /* Program.swift in Sources */,
 				5BB5F79019E1FF8900AEA696 /* CoreDataTest.xcdatamodeld in Sources */,
+				5BB5F7B419E249C200AEA696 /* AddExerciseViewController.swift in Sources */,
+				5BB5F7B019E2002800AEA696 /* MyTableViewController.swift in Sources */,
+				5BBFD04919E3669800FF32F9 /* ProgramCell.swift in Sources */,
 				5BB5F78D19E1FF8900AEA696 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +423,7 @@
 				5BB5F7AB19E1FF8900AEA696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BB5F7AC19E1FF8900AEA696 /* Build configuration list for PBXNativeTarget "CoreDataTestTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +432,7 @@
 				5BB5F7AE19E1FF8900AEA696 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
