@@ -59,6 +59,20 @@ class MyTableViewController: UITableViewController, NSFetchedResultsControllerDe
     }
     
     //UITableViewDelegate
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let thisProgram = fetchedResultsController.objectAtIndexPath(indexPath) as Program
+        
+        let entityDescription = NSEntityDescription.entityForName("Program", inManagedObjectContext: managedObjectContext)
+        entityDescription
+        
+        let managedObject: NSManagedObject = fetchedResultsController.objectAtIndexPath(indexPath) as NSManagedObject
+        managedObjectContext.deleteObject(managedObject)
+        managedObjectContext.save(nil)
+        
+        (UIApplication.sharedApplication().delegate as AppDelegate).saveContext()
+    }
 
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -67,15 +81,7 @@ class MyTableViewController: UITableViewController, NSFetchedResultsControllerDe
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
-        
-        
-//        if section == 0 && anyToDoLeft(){
-//            return "To do"
-//        }
-//        else {
-//            return "Completed"
-//        }
-        return "TEST"
+        return nil
     }
    
     
@@ -89,9 +95,8 @@ class MyTableViewController: UITableViewController, NSFetchedResultsControllerDe
     
     func taskFetchRequest() -> NSFetchRequest {
         let fetchRequest = NSFetchRequest(entityName: "Program")
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-        let completedDescriptor = NSSortDescriptor(key: "muscle", ascending: true)
-        fetchRequest.sortDescriptors = [completedDescriptor, sortDescriptor]
+        let sortDescriptor = NSSortDescriptor(key: "muscle", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
         
         return fetchRequest
     }
