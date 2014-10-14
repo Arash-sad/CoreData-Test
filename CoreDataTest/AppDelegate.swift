@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-
+// test branching comment
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
